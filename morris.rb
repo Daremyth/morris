@@ -6,14 +6,14 @@ class GameWindow < Gosu::Window
     super(600,600,false) 
     self.caption = "Three Men's Morris"
   
-    @background_image = Gosu::Image.new(self, Circle.new(200), true)
+    @background_image = Gosu::Image.new(self, "redwood_bg.png", true)
   end
   
   def update
   end
   
   def draw
-    @background_image.draw(50,50,0)
+    @background_image.draw(-8,-8,0)
   end
 end
 
